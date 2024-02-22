@@ -3,8 +3,9 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
-interface KeyValuePair {
-  [key: string | symbol]: any;
+interface KeyValuePair<K, V> {
+  key: K;
+  value: V;
 }
 
 export {};
